@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    position: fixed;
+    background-color: #212529;
+    z-index: 1;
+}
+
+.nav-img {
+    width: 50%;
+    float: left;
+    margin: auto;
+}
+
+.navbar .nav-img img {
+    width: 300px;
+    padding-left: 120px;
+    padding-top: 15px;
+
+}
+
+.navbar ul {
+    float: left;
+    width: 50%;
+    list-style: none;
+    padding-top: 12px;
+}
+
+.navbar ul li {
+    width: 20%;
+    font-size: 15px;
+    float: left;
+    color: white;
+    text-align: left;
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    background-image: url('../images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-text {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: static;
+    padding-top: 310px;
+    color: white;
+
+}
+
+.header-text h2 {
+    font-style: italic;
+    font-size: 35px;
+
+}
+
+.header-text h1 {
+    font-size: 80px;
+}
+
+.header-btn {
+    width: 90%;
+    margin: auto;
+    position: static;
+    padding-top: 50px;
+    /* right: 650px; */
+    padding-left: 625px;
+    float: left;
+    /* background-color: blue; */
+}
+
+.header-btn button {
+    font-size: 20px;
+    width: 230px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: #ffc800;
+    color: white;
+    border-style: none;
+}
+
+.navbar .nav-list ul li:hover {
+    color: #ffc800;
+}
+
+.header .header-btn button:hover {
+    background-color: #cba418;
+}
+
+.services {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.services-text {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-text h2 {
+    font-size: 40px;
+}
+
+.services p {
+    font-style: italic;
+    color: #848b92;
+}
+
+.services-icons {
+    width: 90%;
+    /* height: 400px; */
+    margin: auto;
+    /* background-color: aquamarine; */
+}
+
+.services-icon {
+    width: 33.33%;
+    /* background-color: blueviolet; */
+    margin: auto;
+    float: left;
+    text-align: center;
+    position: static;
+
+}
+
+.services-icon h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.fa-solid {
+    width: 90%;
+    font-size: 70px;
+    color: white;
+    margin: auto;
+    padding-top: 40px;
+
+}
+
+.service-icon-background {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color: #ffc800;
+    border-radius: 50%;
+    position: static;
+    top: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio {
+    width: 100%;
+    margin: auto;
+    background-color: #f8f9fa;
+    padding-top: 100px;
+    margin-top: 100px;
+    padding-bottom: 70px;
+}
+
+.portfolio-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.portfolio-text h2 {
+    font-size: 40px;
+}
+
+.portfolio-text p {
+    font-style: italic;
+    font-size: 20px;
+    color: #848b92;
+}
+
+.portfolio-cards {
+    margin: auto;
+    width: 85%;
+    height: 400px;
+}
+
+.portfolio-card {
+    width: 30%;
+    margin: auto;
+    float: left;
+    padding: 15px;
+    background-color: white;
+    margin: 20px;
+}
+
+.portfolio-img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.img-layer {
+    width: 100%;
+    height: 300px;
+    background-color: #ffc800;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.plus-position {
+    color: white;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+    opacity: 1;
+}
+
+.portfolio-card h3 {
+    width: 100%;
+    font-size: 30px;
+    margin: auto;
+    position: static;
+    text-align: center;
+}
+
+.portfolio-card p {
+    width: 100%;
+    margin: auto;
+    font-style: italic;
+    font-size: 20px;
+    color: #848b92;
+    text-align: center;
+}
+
+.img-layer:hover {
+    opacity: 0.9;
+}
+
+.team {
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.team-txt {
+    text-align: center;
+    margin: auto;
+}
+
+.team-txt h2 {
+    font-size: 30px;
+}
+
+.team-txt p {
+    font-size: 15px;
+}
+
+.team-cards {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.team-cards p{
+    font-size: 20px;
+    width: 55%;
+    margin: auto;
+    color:#64686c;
+}
+#tst-class{
+    /* background-color: #212529; */
+    position: relative;
+    top: 40px;
+}
+
+.team-card {
+    width: 31%;
+    float: left;
+    margin: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #dfe0e1;
+    border-width: 8px;
+}
+
+.team-card h3 {
+    font-size: 25px;
+}
+
+.team-card i {
+    font-size: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.team-card p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.clr {
+    clear: both;
+}

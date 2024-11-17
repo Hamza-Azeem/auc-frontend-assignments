@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ######################################### nav-bar #########################################*/
+.nav-bar {
+    width: 20%;
+    background-color: #f44336;
+    height: 100vh;
+    float: left;
+    color: white;
+    text-align: left;
+    position: fixed;
+}
+
+.nav-bar p {
+    width: 50%;
+    font-size: 30px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+
+}
+
+.nav-bar ul {
+    width: 90%;
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+.nav-bar li {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-bar li:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+/* ######################################### header #########################################*/
+
+.header {
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+    float: right;
+    padding-left: 50px;
+}
+
+.header h1 {
+    width: 100%;
+    font-size: 64px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.header h2 {
+    width: 100%;
+    float: left;
+    color: red;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.red-line {
+    width: 6%;
+    height: 10px;
+    float: left;
+    border-radius: 12%;
+    background-color: red;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: red;
+}
+
+/* #########################################  gallary  #########################################*/
+
+.photos {
+    width: 80%;
+    margin: auto;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.photo {
+    width: 50%;
+    padding: 7px;
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: gray;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    color: white;
+}
+
+.back p {
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.zoom:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.zoom:hover .layer {
+    background-color: white;
+    opacity: 0.2;
+    transform: rotate(360deg);
+    transition: transform 2s 1s, opacity 0.5s 1s;
+
+}
+
+#photoOneRotate:hover {
+    transform: rotateY(180deg);
+    transition: transform, 1s;
+}
+
+#photoTwoRotate:hover {
+    transform: rotateY(180deg);
+    transition: transform, 1s;
+}
+
+.thin {
+    background-color: white;
+    opacity: 0.2;
+}
+
+.thin:hover {
+    opacity: 0;
+}
+
+/* #########################################  services  #########################################*/
+
+.services {
+    width: 80%;
+    margin: auto;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+.services h2 {
+    width: 100%;
+    float: left;
+    color: red;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.services p {
+    width: 100%;
+    float: left;
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* #########################################  desginers  #########################################*/
+
+.designers {
+    width: 80%;
+    margin: auto;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+.designers h2 {
+    width: 100%;
+    float: left;
+    color: red;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.designers p {
+    width: 100%;
+    float: left;
+    margin: auto;
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.cards {
+    width: 100%;
+    float: right;
+    margin: auto;
+}
+
+.card {
+    width: 31%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card img {
+    width: 100%;
+    margin: auto;
+}
+
+.card-text {
+    width: 100%;
+    margin: auto;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.card-text h3 {
+    font-size: larger;
+    font-weight: lighter;
+
+}
+
+.card-text h4 {
+    color: #999999;
+    font-weight: lighter;
+}
+
+/* #########################################  packages  #########################################*/
+
+.packages {
+    width: 80%;
+    margin: auto;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+.packages-text {
+    width: 100%;
+    float: left;
+    margin: auto;
+    font-size: 15px;
+}
+
+.packages h2 {
+    width: 100%;
+    float: left;
+    color: red;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.lists {
+    width: 100%;
+    background-color: beige;
+    margin: auto;
+}
+
+.list {
+    width: 48%;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.list ul {
+    width: 100%;
+    list-style: none;
+    background-color: #f1f1f1;
+    margin: auto;
+    text-align: center;
+}
+
+.list ul li {
+    width: 100%;
+    height: 14.2%;
+    border-bottom: 1px solid #dfdfdf;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.package-head {
+    width: 100%;
+    background-color: #616161;
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.package-price {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.package-price h3 {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.package-price p {
+    color: gray;
+    margin-bottom: 25px;
+
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.button button {
+    width: 20%;
+    height: 50px;
+    border-radius: 2%;
+    border-style: none;
+    position: relative;
+    bottom: 15px;
+    font-size: 15px;
+    background-color: white;
+}
+
+#list2 .package-head {
+    background-color: red;
+}
+
+#list2 button {
+    color: white;
+    background-color: red;
+}
+
+.button button:hover {
+    color: white;
+    background-color: black;
+}
+
+#list2 .button button:hover {
+    color: white;
+    background-color: black;
+}
+
+/* #########################################  contact  #########################################*/
+
+.contact {
+    width: 80%;
+    margin: auto;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    width: 100%;
+    float: left;
+    color: red;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.contact p{
+    width: 100%;
+    float: left;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.design-form{
+    width: 100%;
+    float: left;
+}
+.design-form form{
+    width: 100%;
+    margin: auto;
+}
+.design-form form input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#last-button{
+    color: white;
+    background-color: #f44336;
+    height: 50px;
+    font-size: 18px;
+    border-style: none;
+}
+
+#last-button:hover{
+    color: black;
+    background-color: lightgray;
+}
+
+
+/* #########################################  footer  #########################################*/
+
+.footer{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    float: right;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 90px;
+    background-color: #f1f1f1;
+}
+
+.footer p{
+    float: right;
+    padding-top: 40px;
+}
+
+
+.clr {
+    clear: both;
+}

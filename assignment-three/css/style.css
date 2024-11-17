@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../images/the-town-bg-01.jpg');
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.headerDiv {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+    font-size: 25px;
+}
+
+.headerDiv h1 {
+    font-size: 60px;
+}
+
+nav h2 {
+    color: white;
+    width: 49%;
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 100px;
+    display: inline-block;
+}
+
+nav ul {
+    color: white;
+    width: 49%;
+    margin: auto;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav ul li {
+    width: 32%;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+nav h2:hover {
+    color: #0069ed;
+    opacity: 0.8;
+}
+
+nav ul li:hover {
+    color: #0069ed;
+    opacity: 0.8;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    /* can't make navbar fixed  */
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+
+.section-one-div {
+    width: 49%;
+    margin: auto;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+section h2 {
+    color: #49a0db;
+}
+
+section div p {
+    color: #a0a0a0;
+}
+
+#div2 {
+    width: 49%;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    margin-top: 110px;
+    font-size: 25px;
+    padding-right: 200px;
+}
+
+section div button {
+    background-color: #49a0db;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+section div button:hover {
+    background-color: #0095f8;
+}
+
+.imgAndwords {
+    width: 30%;
+    margin: auto;
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 42px;
+    font-size: 20px;
+}
+
+.centerHeading {
+    text-align: center;
+}
+
+.images {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.img{
+    width: 20%;
+    float: left;
+}
+.img img {
+    width: 100%;
+    height: 350px;
+    padding: 0 10px;
+
+}
+
+.clr {
+    clear: both;
+}

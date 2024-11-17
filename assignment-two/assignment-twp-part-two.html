@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FillTheForm</title>
+    <style>
+        body{
+            background-color:skyblue;
+        }
+        legend{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="assignment-two-part-one.html">
+        <fieldset style="background-color:blanchedalmond;">
+            <legend>Personal Data</legend>
+            <fieldset style="background-color:sandybrown;">
+                <legend style="background-color:crimson;">Your Name</legend>
+                <label for="firstName">first name&nbsp;: </label>
+                <input type="text" id="firstName" name="firstName" placeholder="hamza">
+                <br>
+                <label for="lastName">last name &nbsp;: </label>
+                <input type="text" id="lastName" name="lastName" placeholder="azeem">
+            </fieldset>
+            <br> <br>
+            <label for="phone">your phone &nbsp;:</label>
+            <input type="text" name="phone" id="phone">
+            <br>
+            <label for="email">email &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="password">password &nbsp; &nbsp; :</label>
+            <input type="password" name="password" id="password">
+            <br> <br>
+            <label for="gender">Gender: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; </label>
+            <input type="radio" name="gender" id="male" value="male"> male
+            <input type="radio" name="gender" id="female" value="female"> female
+            <br><br><br>
+            <label for="colors">favorite color:</label>
+            <input type="checkbox" name="colors" id="red" value="red"> Red
+            <input type="checkbox" name="colors" id="green" value="green"> Green
+            <br><br><br>
+            <select name="region" id="region">
+                <optgroup label="Egypt">
+                    <option value="cairo"> Cairo</option>
+                    <option value="alexandria"> Alexandria</option>
+                    <option value="behira"> Behira</option>
+                </optgroup>
+                <optgroup label="Saudi Arabia">
+                    <option value="riyadh"> Riyadh</option>
+                    <option value="mecca"> Mecca</option>
+                    <option value="Madina"> Madina El Monawara</option>
+                </optgroup>
+                <optgroup label="UAE">
+                    <option value="Abu Dhabi"> Abu Dhabi</option>
+                    <option value="Dubai"> Dubai</option>
+                    <option value="Sharjah"> Sharjah</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
