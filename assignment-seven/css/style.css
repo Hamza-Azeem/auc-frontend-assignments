@@ -1,0 +1,496 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blue: #13357b;
+}
+body{
+    height: calc(10000/16 * 1rem);
+}
+/* General Styling */
+
+.general-btn{
+    background-color: var(--blue);
+    color: #f2f2f2;
+    font-weight: bolder;
+    width: calc(120/16 * 1rem);
+    border-radius:calc(25/16 * 1rem);
+    height: calc(45/16 * 1rem);
+    border-color: var(--blue);
+}
+
+.general-btn:hover{
+    background-color: #f2f2f2;
+    color: var(--blue);
+    transition: all 0.4s;
+}
+.general-margin{
+    position:relative;
+    margin-top: 6rem;
+}
+.clr{
+    clear: both;
+}
+
+
+/* First Navbar */
+.navbar {
+    background-color: var(--blue);
+    color: white;
+    height: calc(50/16 * 1rem);
+    position: fixed !important;
+    z-index: 500 !important;
+    width: 100% !important; 
+}
+.navbar a,
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
+.navbar .dropdown-item{
+    color: black !important;
+}
+.navbar .social-icon{
+    border-radius: 100%;
+    border: calc(1/16 * 1rem) ;
+    width: calc(33/16 * 1rem);
+    height: calc(33/16 * 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .dropdown{
+    width: 100%;
+    align-self: flex-end;
+    z-index: 1000 !important;
+}
+ul{
+    list-style: none;
+}
+.navbar ul .dropdown-menu li a:hover{
+    background-color: var(--blue) !important;
+    color:white !important;
+}
+.navbar .social-icon:hover{
+    background-color: white;
+    transition: all 0.8s;
+}
+.navbar .social-icon:hover i{
+    color: black;
+}
+#trav{
+    color: var(--blue) !important;
+}
+/* Second Navbar */
+#scd-nav{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: #f2f2f2;
+    top: 2.9rem;
+    position: fixed;
+    z-index: 5 !important;
+}
+#scd-nav .container-fluid .navbar-collapse ul li{
+    padding: calc(20/16 * 1rem) !important;
+    font-size: calc(18/16 * 1rem);
+}
+#scd-nav .container-fluid .navbar-collapse ul li a{
+    color:black !important;
+    z-index: 100 !important;
+}
+#scd-nav .container-fluid .navbar-collapse ul li:hover .li-layer{
+    top: 0;
+    height: 100%;
+    transition: all 0.7s;
+    opacity: 1;
+}
+#scd-nav .container-fluid .navbar-collapse ul li:hover a{
+    color: #f2f2f2 !important;
+}
+
+#drop-down{
+    width: 13% !important;
+    height: calc(85/16 * 1rem)!important;
+    margin: 0 !important; 
+}
+.li-layer{
+    width: 100%;
+    height: 0rem;
+    position: absolute;
+    top: calc(80/16 * 1rem);
+    left: 0;
+    right: 0;
+    z-index: -1 !important;
+    background-color: var(--blue);
+}
+/* Header Carousel */
+#carouselExample img{
+    filter: brightness(50%)
+}
+#carouselExample{
+    top:4rem;
+}
+#carouselExample .txt{
+    float: left;
+    color: white;
+    top: 12rem;
+    left: 1rem;
+    position: absolute;
+    /* font-weight:900; */
+    text-align: center;
+}
+.txt h3{
+    font-size: 3rem;
+}
+.txt h1{
+    font-size: 5rem;
+}
+.txt h5{
+    font-size: 1.5rem;
+}
+.txt button{
+    font-size: 1rem;
+    width: 15%;
+    height: 3rem;
+    margin-top: 3rem;
+}
+.txt form{
+    position: relative;
+    left: 8rem;
+    top: 10rem;
+    width: 75% !important;
+    position: relative;
+    height: 15rem;
+    
+}
+.car-btn{
+    z-index:3;
+}
+.txt form input{
+    width: 75% !important;
+    height: 3rem;
+    border-radius: 2rem;
+    z-index: 1;
+    top:5rem !important;
+    position: relative;
+    left: 2rem;
+}
+.txt form button{
+    z-index: 1;
+    top:5rem !important;
+    position: relative;
+    right: 3rem;
+}
+.form-layer{
+    background-color: var(--blue);
+    height: 60%;
+    width: 100%;
+    border-radius: 5rem;
+    position: absolute;
+    opacity: 0.7;
+    top:2rem
+}
+.about-sec{
+    position: relative;
+    top:4rem;
+    margin: 1rem;
+    margin-top: 10rem;
+    width: 100%;
+}
+.about{
+    width: 50%;
+    position:relative;
+}
+.abt-txt h2{
+    font-weight: bold;
+}
+.abt-txt p{
+    color: gray;
+}
+.about ul li{
+    color:gray;
+}
+.abt-layer{
+    background-image: url("../images/about-img-1.png");
+    position:absolute;
+    width:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+    
+}
+.abt-img{
+    border-color: var(--blue);
+    border-width: 5rem;
+    border-style: solid;
+    margin: auto;
+    border-top: white;
+    border-bottom: white;
+    width: 80%;
+}
+section .abt-img img{
+    width: 100%;
+    margin: auto;
+}
+
+/* Service */
+.service{
+    background: #f2f2f2;
+    position: relative;
+    top: 4rem;
+    margin-top: 4rem;
+    padding-top: 5rem;
+}
+.service .cards .card{
+    width: 45%;
+    border-color: var(--blue);
+
+}
+.serv-txt{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.card-txt{
+    width: 80%;
+    margin: 2rem;
+    text-align: left;
+}
+.card-txt p{
+    color:gray;
+}
+.card-txt h3{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.card i{
+    top:calc(80/16 * 1rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color:var(--blue);
+    font-size: 4rem;
+    position: relative;
+}
+.service .cards .card:hover{
+    background-color: var(--blue);
+    color: white;
+    transition: 0.5s all;
+}
+.service .cards .card:hover p{
+    color: white;
+    transition: 0.5s all;
+}
+.service .cards .card:hover i{
+    color: white;
+    transition: 0.5s all;
+}
+
+/* Destination */
+
+.dest-img-general {
+    /* width: 31%;
+    height: 300px !important; */
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.dest-img-width{
+    width: 31%;
+    height: 300px !important;
+}
+.dest-img-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: var(--blue);
+    opacity: 0;
+    border-radius:20px;
+}
+a{
+    text-decoration: none;
+}
+.inside-layer-general{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    color: white !important;
+    border-radius:20px;
+}
+.inside-layer-general .inside-layer-txt{
+    position: relative;
+    right: 120px !important;
+    top: 240px !important; 
+}
+.inside-layer-general a{
+    color: white;
+}
+.dest-img-general:hover .dest-img-layer{
+    opacity: 0.6;
+    border-radius:20px;
+    transition: all 1s;
+}
+.dest-img-general:hover .inside-layer-general{
+    opacity: 1;
+    transition: all 0.4s;
+
+}
+.inside-layer-general:hover .inside-layer-txt {
+    top: 150px !important;
+    transition: all 0.4s;
+}
+.dest-img-general img{
+    border-radius: 20px;
+}
+.dest-img-general:hover img{
+    transform: scale(120%);
+    transition: all 0.5s;
+}
+.inside-layer-general a:hover{
+    color: blue;
+    transition: 1s all;
+}
+
+/* Explore Tour */
+
+.tour-inside-layer{
+    right:35px;
+    top:150px;
+}
+
+.sale{
+    background-color: aqua;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    z-index: 3;
+    top:0;
+    left:0;
+    color: white;
+    border-radius: 10px;
+}
+/* Packages */
+
+.stars{
+    transform: translateY(-80px);
+}
+.packages .card .card-body .d-flex i{
+    font-size: 12px;
+    margin:10px 2px 10px 2px;
+    padding: 0;
+}
+.packages .card .card-body a:hover{
+    color: blue !important;
+    transition: 1s all !important;
+}
+
+.package-img-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 230px;
+    width: 0%;
+    height: 0%;
+    background-color: var(--blue);
+}
+
+.packages .card .card-img-hov:hover .package-img-layer{
+    width: 100%;
+    height: 370px;
+    opacity: 0.6;
+    transition: 1s all;
+}
+.card-price{
+    background-color: var(--blue);
+    width: 20%;
+    transform: translateX(200%);
+    color: white;
+    position: absolute;
+    z-index: 4;
+}
+.package-btn{
+    bottom: 100px !important;
+    background-color: var(--blue) !important;
+    border-color: var(--blue) !important;
+    color:white !important;
+    opacity: 1;
+    height:6%;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Gallery */
+.form-sec{
+    /* background-image: url("../images/tour-booking-bg.jpg");
+    background-position: center;
+    background-size: cover; */
+    position:relative;
+    color: white !important;
+}
+.form-background{
+    width:100%;
+    background-image: url("../images/tour-booking-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+.form-layer2{
+    width: 100%;
+    height:100%;
+    background-color: var(--blue);
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 0;
+}
+.gallery-img-width{
+    width: 19%;
+    margin: 5px;
+}
+.gallery-img-width img{
+    filter: brightness(70%);
+}
+.gallery-inside-layer{
+    position:relative;
+    top:100%;
+}
+.gallery-inside-layer i{
+    opacity: 0;
+}
+.gallery-img-width:hover .inside-layer-general .gallery-inside-layer {
+    top: 50%;
+    transition: 0.4s all;
+}
+.gallery-img-width:hover .inside-layer-general .gallery-inside-layer i{
+    opacity: 1;
+    transition: 1s all;
+}
+.form-input-wdith{
+    width: 48% !important;
+    height: 60px;
+    margin: 5px !important;
+}
